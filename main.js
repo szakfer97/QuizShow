@@ -40,14 +40,6 @@ let questions = [
     correct: "A",
   },
   {
-    question: "In what year did the demolition of the Berlin Wall begin?",
-    choiceA: "1980",
-    choiceB: "2000",
-    choiceC: "1989",
-    choiceD: "1995",
-    correct: "C",
-  },
-  {
     question: "How many members does the EU have?",
     choiceA: "15",
     choiceB: "23",
@@ -56,7 +48,23 @@ let questions = [
     correct: "C",
   },
   {
-    question: "In what year did Albert Einstein die",
+    question: "When did the demolition of the Berlin Wall begin?",
+    choiceA: "1980",
+    choiceB: "2000",
+    choiceC: "1989",
+    choiceD: "1995",
+    correct: "C",
+  },
+  {
+    question: "When did the Napoleonic Wars end?",
+    choiceA: "1803",
+    choiceB: "1815",
+    choiceC: "1807",
+    choiceD: "1812",
+    correct: "B",
+  },
+  {
+    question: "When did Albert Einstein die",
     choiceA: "1945",
     choiceB: "1930",
     choiceC: "1955",
@@ -129,20 +137,12 @@ let questions = [
     correct: "D",
   },
   {
-    question: "What word is spelled incorrectly in every single dictionary?",
-    choiceA: "Correctly",
-    choiceB: "Incorrectly",
-    choiceC: "Uncorrectly",
-    choiceD: "Noncorrectly",
-    correct: "B",
-  },
-  {
     question:
       "Some months have 31 days, others have 30 days, but how many have 28 days?",
     choiceA: "All the months",
-    choiceB: "February",
-    choiceC: "2 February in 10 years",
-    choiceD: "None of this",
+    choiceB: "Two",
+    choiceC: "One",
+    choiceD: "None of them",
     correct: "A",
   },
   {
