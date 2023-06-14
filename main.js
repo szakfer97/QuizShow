@@ -1,6 +1,6 @@
-//QuizShow programme made by Szakacsi Ferenc-Adam/
+// QuizShow programme made by Szakacsi Ferenc-Adam/
 
-// select all elements by id
+// Select all elements by id
 const start = document.getElementById("start");
 const startText = document.getElementById("start-text");
 const quiz = document.getElementById("quiz");
@@ -13,6 +13,7 @@ const counter = document.getElementById("counter");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
+// Create questions
 let questions = [
   {
     question: "Which city is the capital of Romania?",
@@ -186,7 +187,7 @@ const questionTime = 20; // 20s
 let Timer;
 let score = 0;
 
-// render a question
+// Render a question
 function renderQuestion() {
   let q = questions[runningQuestion];
   question.innerHTML = "<p>" + q.question + "</p>";
@@ -198,7 +199,7 @@ function renderQuestion() {
 
 start.addEventListener("click", startQuiz);
 
-// start quiz
+// Start quiz
 function startQuiz() {
   var music = new Audio();
   music.src = "public/music/BackgroundMusic.mp3";
@@ -212,43 +213,43 @@ function startQuiz() {
   Timer = setInterval(renderCounter, 1000); // 1000ms = 1s
 }
 
-// render progress
+// Render progress
 function renderProgress() {
   for (let qIndex = 0; qIndex <= lastQuestion; qIndex++) {
     progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
   }
 }
 
-// counter render
+// Counter render
 function renderCounter() {
   if (count <= questionTime) {
     counter.innerHTML = count;
     count++;
   } else {
     count = 0;
-    // change progress color to red
+    // Change progress color to red
     answerIsWrong();
     if (runningQuestion < lastQuestion) {
       runningQuestion++;
       renderQuestion();
     } else {
-      // end the quiz and show the score
+      // End the quiz and show the score
       clearInterval(Timer);
       scoreRender();
     }
   }
 }
 
-// checkAnwer
+// Check anwer
 function checkAnswer(answer) {
   if (answer == questions[runningQuestion].correct) {
-    // answer is correct
+    // Answer is correct
     score++;
-    // change progress color to green
+    // Change progress color to green
     answerIsCorrect();
   } else {
-    // answer is wrong
-    // change progress color to red
+    // Answer is wrong
+    // Change progress color to red
     answerIsWrong();
   }
   count = 0;
@@ -256,13 +257,13 @@ function checkAnswer(answer) {
     runningQuestion++;
     renderQuestion();
   } else {
-    // end the quiz and show the score
+    // End the quiz and show the score
     clearInterval(Timer);
     scoreRender();
   }
 }
 
-// answer is correct
+// Answer is correct
 function answerIsCorrect() {
   document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
   var music = new Audio();
@@ -270,7 +271,7 @@ function answerIsCorrect() {
   music.play();
 }
 
-// answer is Wrong
+// Answer is Wrong
 function answerIsWrong() {
   document.getElementById(runningQuestion).style.backgroundColor = "#f00";
   var music = new Audio();
@@ -278,7 +279,7 @@ function answerIsWrong() {
   music.play();
 }
 
-// score render
+// Score render
 function scoreRender() {
   scoreDiv.style.display = "block";
   var music = new Audio();
@@ -288,7 +289,7 @@ function scoreRender() {
   // calculate the amount of question percent answered by the user
   const scorePerCent = Math.round((100 * score) / questions.length);
 
-  // choose the image based on the scorePerCent
+  // Choose the image based on the scorePerCent
   let img =
     scorePerCent >= 80
       ? "public/images/great.png"
