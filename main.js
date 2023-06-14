@@ -2,7 +2,8 @@
 
 // Select all elements by id
 const start = document.getElementById("start");
-const startText = document.getElementById("start-text");
+const questionText = document.getElementById("start-questiontext");
+const readyText = document.getElementById("start-readytext");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const choiceA = document.getElementById("A");
@@ -40,7 +41,7 @@ let questions = [
     correct: "A",
   },
   {
-    question: "How many members does the EU have?",
+    question: "How many members states does the EU have?",
     choiceA: "15",
     choiceB: "23",
     choiceC: "27",
@@ -205,7 +206,8 @@ function startQuiz() {
   music.src = "public/music/BackgroundMusic.mp3";
   music.play();
   start.style.display = "none";
-  startText.style.display = "none";
+  questionText.style.display = "none";
+  readyText.style.display = "none";
   renderQuestion();
   quiz.style.display = "block";
   renderProgress();

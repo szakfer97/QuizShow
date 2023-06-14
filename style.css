@@ -49,7 +49,7 @@ body {
     0 22.3px 17.9px rgba(0, 0, 0, 0.363), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.404);
   position: relative;
-  background-color: #d6bf73;
+  background-color: #d88771;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 30% 40%;
@@ -75,9 +75,13 @@ body {
   border: 4px solid #494949 !important;
   transition: all 0.4s ease 0s;
 }
-#start-text {
-  margin-left: 175px;
+#start-questiontext {
+  margin-left: 105px;
   margin-top: 40px;
+}
+#start-readytext {
+  margin-left: 290px;
+  margin-top: 50px;
 }
 #question {
   width: 800px;
@@ -293,7 +297,10 @@ footer {
     font-size: 20px;
     margin: 100px;
   }
-  #start-text{
+  #start-questiontext{
+    display: none;
+  }
+  #start-readytext{
     display: none;
   }
   #questions {
