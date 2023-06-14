@@ -96,8 +96,8 @@ body {
 #choices {
   width: 580px;
   position: absolute;
-  right: 0;
-  top: 100px;
+  left:80px;
+  top: 130px;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, auto);
