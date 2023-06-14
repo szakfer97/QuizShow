@@ -39,8 +39,7 @@ let questions = [
     correct: "A",
   },
   {
-    question:
-      "Demolition of the Berlin wall separating East and West Germany began in what year?",
+    question: "In what year did the demolition of the Berlin Wall begin?",
     choiceA: "1980",
     choiceB: "2000",
     choiceC: "1989",
@@ -121,7 +120,7 @@ let questions = [
   },
   {
     question:
-      "How could a man go outside in the pouring rain without protection, and not have a hair on his head get wet?",
+      "How can a man go outside in the rain without protection, and not get a hair on his head wet?",
     choiceA: "He was insane",
     choiceB: "He wasn't a man",
     choiceC: "He was SpiderMan",
