@@ -37,7 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   animation-name: example;
-  animation-duration: 60s;
+  animation-duration: 120s;
 }
 
 #container {
@@ -50,7 +50,7 @@ body {
     0 100px 80px rgba(0, 0, 0, 0.404);
   position: relative;
   animation-name: example;
-  animation-duration: 60s;
+  animation-duration: 120s;
 }
 #start {
   color: #494949 !important;
