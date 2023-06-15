@@ -302,7 +302,6 @@ function scoreRender() {
       : scorePerCent >= 20
       ? "public/images/bad.png"
       : "public/images/terrible.png";
-
   scoreDiv.innerHTML = "<img src=" + img + ">";
   scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
 }

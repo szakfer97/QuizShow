@@ -10,9 +10,9 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: black;
+  background: rgb(255, 255, 255);
   z-index: 200;
-  color: yellowgreen;
+  color: #d88771;
   text-align: center;
   font-size: 48px;
   padding: 20px;
@@ -23,7 +23,7 @@
   animation: fadeIn 2s ease-in forwards;
 }
 b {
-  color: rgb(255, 208, 0);
+  color: #d88771;
   font-size: 100px;
 }
 body {
@@ -122,8 +122,8 @@ body {
 }
 .choice:hover {
   color: #ffffff !important;
-  background: #f6b93b;
-  border: 4px solid #494949 !important;
+  background: #000000;
+  border: 4px solid #fffcfc !important;
   transition: all 0.4s ease 0s;
 }
 
