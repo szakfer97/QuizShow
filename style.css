@@ -49,10 +49,8 @@ body {
     0 22.3px 17.9px rgba(0, 0, 0, 0.363), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.404);
   position: relative;
-  background-color: #d88771;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 30% 40%;
+  animation-name: example;
+  animation-duration: 60s;
 }
 #start {
   color: #494949 !important;
