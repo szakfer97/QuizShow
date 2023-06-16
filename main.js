@@ -306,12 +306,12 @@ function scoreRender() {
   scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
 }
 
-var myVar;
-
+// Activate loader page
 function myLoader() {
-  myVar = setTimeout(showPage, 20000);
+  setTimeout(showPage, 20000);
 }
 
+// Make loader page disappear
 function showPage() {
   document.getElementById("loader").style.display = "none";
 }
